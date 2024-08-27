@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assests/logo.png" type="image/x-icon">
+    <title>Matrigyan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 20px; 
+            padding: 20px;
+            max-width: 1140px;
+            margin: 20px;
+            width: 100%;
+            position: relative;
+            margin: 0 auto;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.4s ease; 
+        }
+        .image-container img:hover{
+            border-radius: 0px;
+            box-shadow: 4px 4px 8px #888888;
+            transform: translateY(-10px);
+        }
+    
+            @keyframes appear{
+                from{
+                    opacity: 0;
+                    scale: 0.5s;
+                    clip-path: inset(100% 100% 0 0);
+                }
+                to{
+                    opacity: 1;
+                    scale: 1;
+                    clip-path: inset(0 0 0 0);
+                }
+            }
+            .block{
+                animation: appear linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+            }
+        
+        @media (max-width:454px){
+            .image-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+                gap: 20px; 
+            }
+        }
+    </style>
+    <nav >
+        <div class="logo">
+            <img src="assests/logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+            <li><a href="index.html">Join Us</a></li>
+        </ul>
+        <button class="navi-button"><a href="">Download App</a></button>
+        <img src="assests/hamburger_12604112.png" alt="Menu" class="menu" id="menu-icon">
+    </nav>
+    <ul class="nav-2" id="nav-2">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html">Contact Us</a></li>
+        <li><a href="index.html">Join Us</a></li>
+        <button class="navi-button"><a href="">Download App</a></button>
+        <img src="assests/close.png" alt="Close" class="close-menu" id="close-icon">
+    </ul>
+    <!-- Gallery -->
+    <div class="image-container" class="view">
+        <img src="assests/Gallery-2.svg" alt="" class="block">
+        <img src="assests/Gallery-3.svg" alt="" class="block">
+        <img src="assests/Gallery-6.svg" alt="" class="block">
+        <img src="assests/Gallery-5.svg" alt="" class="block">
+        <img src="assests/Gallery-4.svg" alt="" class="block">
+        <img src="assests/Gallery-7.svg" alt="" class="block">
+        <img src="assests/Gallery-8.svg" alt="" class="block">
+        <img src="assests/Gallery-9.svg" alt="" class="block">
+        <img src="assests/Gallery-10.svg" alt="" class="block">
+        <img src="assests/Gallery-11.svg" alt="" class="block">
+        </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-column">
+                    <div class="footer-text">
+                        We believe in the power of play to foster creativity, problem-solving skills, and imagination.
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon email-icon"></div>
+                            <img src="assests/email.png" alt="">
+                            <a href="mailto:hello@littlelearners.com" class="contact-text">hello@littlelearners.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon phone-icon"></div>
+                            <img src="assests/phone.png" alt="">
+                            <a href="tel:+9191813232309" class="contact-text">+91 91813 23 2309</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon location-icon"></div>
+                            <img src="assests/location.png" alt="">
+                            <a href="tel:+9191813232309" class="contact-text">Somewhere in the world</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <a href="#" class="link-header">Home</a>
+                        <a href="#" class="link-item">Features</a>
+                        <a href="#" class="link-item">Our Testimonials</a>
+                        <a href="#" class="link-item">FAQ</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#" class="link-header">About Us</a>
+                        <a href="#" class="link-item">Our Mission</a>
+                        <a href="#" class="link-item">Our Vision</a>
+                        <a href="#" class="link-item">Awards and Recognitions</a>
+                        <a href="#" class="link-item">History</a>
+                        <a href="#" class="link-item">Teachers</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#" class="link-header">Academics</a>
+                        <a href="#" class="link-item">Special Features</a>
+                        <a href="#" class="link-item">Gallery</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#" class="link-header">Contact Us</a>
+                        <a href="#" class="link-item">Information</a>
+                        <a href="#" class="link-item">Map & Direction</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <div class="policy-links">
+                        <a href="#" class="policy-item">Terms of Service</a>|
+                        <a href="#" class="policy-item">Privacy Policy</a>|
+                        <a href="#" class="policy-item">Cookie Policy</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><img src="assests/fb.png" alt="" class="social-icon"></a>
+                        <a href="#"><img src="assests/linkedin.png" alt="" class="social-icon"></a></a>
+                        <a href="#"><img src="assests/X.png" alt="" class="social-icon"></a></a>
+                    </div>
+                </div>
+                <div class="footer-divider"></div>
+            </div>
+        </div>
+    </footer> 
+    <script src="main.js"></script>
+</body>
+</html>

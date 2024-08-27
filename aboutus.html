@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assests/logo.png" type="image/x-icon">
+    <title>Matrigyan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .feature-container{
+            width: 450px;
+            padding: 30px 70px 50px 42px;
+            background: white;
+            box-shadow: 6px 6px 0px 2px #1E1E1E;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #262626;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 20px auto;
+        }
+        .feature{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;
+        }
+        .feature-image{
+            width: 100%;
+            height: 250px;
+            margin: 0 auto;
+        }
+        .fea-title{
+            text-align: center; 
+            color: #2B2B2B; 
+            font-size: 20px; 
+            font-family: Century Gothic; 
+            font-weight: 800; 
+            line-height: 31.69px; 
+        }
+        .description{
+            text-align: center;
+        }
+        @media (max-width:1061px){
+            main{
+                display: flex;
+                flex-direction: column;
+            }
+            .feature{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                margin: 30px;
+            }
+            @media (max-width:725px){
+                .abt-img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .feature{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+            @media (max-width:965px){
+                .feature{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    </style>
+    <nav>
+        <div class="logo">
+            <img src="assests/logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Join Us</a></li>
+        </ul>
+        <button class="navi-button"><a href="">Download App</a></button>
+        <img src="assests/hamburger_12604112.png" alt="Menu" class="menu" id="menu-icon">
+    </nav>
+    <ul class="nav-2" id="nav-2">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html">Contact Us</a></li>
+        <li><a href="index.html">Join Us</a></li>
+        <button class="navi-button"><a href="">Download App</a></button>
+        <img src="assests/close.png" alt="Close" class="close-menu" id="close-icon">
+    </ul>
+    <!-- About us -->
+    <main>
+        <div class="abt-content">
+            <p>Is an ed-tech platform that trains kids and teenagers in programming and other tech skills so as to prepare them for the opportunities of the future</p>
+            <button><img src="assests/search.svg" alt="" class="search-btn">Explore</button>
+        </div>
+
+        <div>
+            <img src="assests/aboutus-1.svg" alt="" class="abt-img">
+        </div>
+    </main>
+
+    <!-- Feature -->
+    <h1 style="text-align: center; font-weight:800">Features Include</h1>
+    <div class="feature">
+        <div class="feature-container">
+            <div class="feature-content">
+                <img class="feature-image" src="assests/aboutus-2.svg" alt="Code Reviews" >
+                <div class="fea-title">Code Reviews</div>
+                <div class="description">We don’t just give you assignments, we review your solutions and give you insightful feedbacks on your code to enhance and reinforce your understanding.</div>
+            </div>
+        </div>
+        <div class="feature-container">
+            <div class="feature-content">
+                <img class="feature-image" src="assests/aboutus-3.svg" alt="Code Reviews">
+                <div class="fea-title">Mentorship</div>
+                <div class="description">Even without being in a physical class, we make it possible for our students to ask questions and get guidance through our seasoned and qualified mentors.</div>
+            </div>
+        </div>
+        <div class="feature-container">
+            <div class="feature-content">
+                <img class="feature-image" src="assests/aboutus-4.svg" alt="Code Reviews">
+                <div class="fea-title">Community Forums</div>
+                <div class="description">Just because you are learning online doesn’t mean you have to be all alone. With our discussion forum, you can share your opinions with other students and even make friends.</div>
+            </div>
+        </div>
+        <div class="feature-container">
+            <div class="feature-content">
+                <img class="feature-image" src="assests/aboutus-5.svg" alt="Code Reviews">
+                <div class="fea-title">Community Forums</div>
+                <div class="description">Just because you are learning online doesn’t mean you have to be all alone. With our discussion forum, you can share your opinions with other students and even make friends.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-column">
+                    <div class="footer-text">
+                        We believe in the power of play to foster creativity, problem-solving skills, and imagination.
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon email-icon"></div>
+                            <img src="assests/email.png" alt="">
+                            <a href="mailto:hello@littlelearners.com" class="contact-text">hello@littlelearners.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon phone-icon"></div>
+                            <img src="assests/phone.png" alt="">
+                            <a href="tel:+9191813232309" class="contact-text">+91 91813 23 2309</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon location-icon"></div>
+                            <img src="assests/location.png" alt="">
+                            <a href="tel:+9191813232309" class="contact-text">Somewhere in the world</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <a href="#" class="link-header">Home</a>
+                        <a href="#" class="link-item">Features</a>
+                        <a href="#" class="link-item">Our Testimonials</a>
+                        <a href="#" class="link-item">FAQ</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#" class="link-header">About Us</a>
+                        <a href="#" class="link-item">Our Mission</a>
+                        <a href="#" class="link-item">Our Vision</a>
+                        <a href="#" class="link-item">Awards and Recognitions</a>
+                        <a href="#" class="link-item">History</a>
+                        <a href="#" class="link-item">Teachers</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#" class="link-header">Academics</a>
+                        <a href="#" class="link-item">Special Features</a>
+                        <a href="#" class="link-item">Gallery</a>
+                    </div>
+                    <div class="link-column">
+                        <a href="#" class="link-header">Contact Us</a>
+                        <a href="#" class="link-item">Information</a>
+                        <a href="#" class="link-item">Map & Direction</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <div class="policy-links">
+                        <a href="#" class="policy-item">Terms of Service</a>|
+                        <a href="#" class="policy-item">Privacy Policy</a>|
+                        <a href="#" class="policy-item">Cookie Policy</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><img src="assests/fb.png" alt="" class="social-icon"></a>
+                        <a href="#"><img src="assests/linkedin.png" alt="" class="social-icon"></a></a>
+                        <a href="#"><img src="assests/X.png" alt="" class="social-icon"></a></a>
+                    </div>
+                </div>
+                <div class="footer-divider"></div>
+            </div>
+        </div>
+    </footer> 
+    <script src="main.js"></script>
+</body>
+</html>
